@@ -1,0 +1,26 @@
+{
+  "name": "tasks-app",
+  "version": "1.0.0",
+  "description": "An app that handles everyday tasks and helps people get organized",
+  "main": "server.js",
+  "author": "Dimitris Kaitantzidis",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon app.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}

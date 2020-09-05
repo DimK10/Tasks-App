@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://user:123456!aA@tasks-app.j3qtx.mongodb.net/Tasks-App?retryWrites=true&w=majority",
+  "jswsecret": "VerySecretJwt123!"
+}
